@@ -1,0 +1,46 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(255, 253, 253);
+    
+}
+.cabecalho{
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgb(39, 39, 39);
+}
+.ig li img{
+    height: 250px;
+    width: 250px;
+    padding: 5px;
+}
+ul li{
+    margin: auto;
+    padding-bottom:15px ;
+    border-radius: 15px;
+}
+.nav-link:hover{
+    color: rgb(255, 255, 255);
+
+}
+i{
+    color: rgb(190, 27, 255);
+    font-size: 40px;
+}
+.fontPer{
+    font-family: 'Pacifico', cursive;
+    color: rgb(190, 27, 255);
+}
+#cardapio , #sobre{
+    background-color: rgba(170, 105, 231, 0.466);
+}
+.bbb{
+    width: 30%;
+}
+@media screen and (max-width: 415px) {
+    
+    #carrosel .xxx{
+        margin-top: 200px;
+    }
+    }

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+    
+<header id="cabecalho" class="fixed-top cabecalho">
+    
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="./img/logo2.jpg"  alt="" style="height: 60px; width: 70px; border-radius: 50%;"><span class="fontPer">Restaurant</span></a>
+                <ul class="nav d-flex flex-wrap ">
+                    <li class="me-1"><a href="#sobre" class="nav-link fontPer"><i class="bi bi-house fs-3"></i> Nós</a></li>
+                    <li class="me-1"><a href="#paraT" class="nav-link fontPer"><i class="bi bi-journal-plus fs-3"></i> Ocasioes</a></li>
+                    <li class="me-1"><a href="#cardapio" class="nav-link fontPer"><i class="bi bi-list-ol fs-3"></i> Cardapio</a></li>
+                    <li class="me-1"><a href="#faleC" class="nav-link fontPer"><i class="bi bi-phone fs-3"></i> contato</a></li>
+                </ul>
+        </div>
+    </nav>           
+
+</header>
+
+<div  class="container-fluid mt-5 " id="carrosel">
+    
+        <div class="row">
+            <div class="col-lg-12 xxx">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" ></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" ></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" ></button>
+                </div>
+                <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                        <img src="./img/slide1.jpg"  alt="restaurante" class= " d-block w-100"  style="height: 25em;" >
+                </div>
+                <div class="carousel-item ">
+                    <img src="./img/slide2.jpg"  alt="comida" class="d-block w-100 " style="height: 25em;">
+                </div>
+                <div class="carousel-item ">
+                    <img src="./img/slide3.jpg"  alt="comida" class="d-block w-100 " style="height: 25em;">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            
+            </div>
+            </div>
+        </div>
+</div>
+
+<div  data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scrool="true">
+
+<section id="sobre">  
+<div class="container-fluid mt-5 mb-5 text-center">
+            <div class="row pt-3 pb-3">
+                    <div class="col-xs-12 col-md-6 pe-5" >
+                        <img src="./img/restaurante.jpg" class="d-block w-100 h-40 m-auto " alt="" style="border-radius: 50px 50px 50px 5px;">
+                    </div>
+        <div class="col-xs-12 col-md-6">
+            <h1 class="mt-2 pb-1 fontPer">Sobre Nosso Restaurante</h1>
+            <p class="mt-2 fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt numquam fugiat quaerat cum delectus excepturi corporis reprehenderit, tenetur totam consequatur inventore, vel consequuntur dicta esse eaque aspernatur beatae non asperiores!</p>
+            <div class="mt-5">
+                <button style="background-color:  rgb(190, 27, 255);" class="btn text-white fontPer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Para Saber Mais Sobre</button>
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title fontPer" id="offcanvasWithBothOptionsLabel">Aqui esta mais sobre nosso restaurante</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <h3 class="fontPer">Aonde tudo começou</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fugiat nostrum magnam quasi labore, vero excepturi doloribus officia, architecto aperiam nesciunt officiis! Corrupti pariatur fugiat laborum repellat cupiditate facilis voluptatibus.</p>
+                        <img src="./img/restaurante.jpg"  alt="restaurante"  style="width: 300px; border-radius: 20px;">
+                    <hr class="w-100">
+                    <h3 class="mt-3 fontPer">Aonde chegamos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fugiat nostrum magnam quasi labore, vero excepturi doloribus officia, architecto aperiam nesciunt officiis! Corrupti pariatur fugiat laborum repellat cupiditate facilis voluptatibus.</p>
+                    <img src="./img/restaurante2.jpg"  alt="restaurante"  style="width: 300px; border-radius: 20px;">
+
+                    <hr class="w-100">
+                    <h3 class="mt-3 fontPer">Sempre o Melhor Para-lhe Servir Melhor </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fugiat nostrum magnam quasi labore, vero excepturi doloribus officia, architecto aperiam nesciunt officiis! Corrupti pariatur fugiat laborum repellat cupiditate facilis voluptatibus.</p>
+                    <img src="./img/objetivo.jpg"  alt="restaurante"  style="width: 300px; border-radius: 20px;">
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<hr class="w-100">
+
+<section id="paraT" class="container-fluid ">
+    <div class="row text-center mt-5 mb-5">
+        <h2 ><span class="fontPer">Para Todas As Ocasioes</span></h2>    
+    </div>
+    <div class="row">
+        
+
+
+<div class="card-group ">
+    <div class="card ">
+        <img src="./img/aniversario.png" class="card-img-top w-100 " alt="..." style="height: 300px;">
+    <div class="card-body">
+        <h4 class="card-title fontPer">Aniversarios</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./img/bolocasamento.jpg" class="card-img-top " alt="..." style="height: 300px;">
+    <div class="card-body">
+            <h4 class="card-title fontPer">Casamentos</h4>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./img/Fimdeano.jpg" class="card-img-top " alt="..." style="height: 300px;">
+    <div class="card-body">
+        <h4 class="card-title fontPer">Festas</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>
+</div>
+
+</section>
+
+<hr class="w-100 mt-5 mb-5">
+
+<div  class="row">
+    <h2 class="text-center fontPer">Nosso Cardapio</h2>
+</div>
+
+<section id="cardapio" class="pt-2 mt-3">
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active fontPer" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#bebidasSalcool" type="button"><span>Bebidas Sem Alcool</span></button>
+            <button class="nav-link fontPer" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#bebidasCalcool" type="button"><span>Bebida Com alcool</span></button>
+            <button class="nav-link fontPer" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#pratosprincipais" type="button"><span>Pratos Principais</span></button>
+            <button class="nav-link fontPer" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#sobremesas" type="button"><span>Sobremesas</span></button>
+        </div>
+        </nav>
+        <div class="tab-content " id="nav-tabContent">
+
+        <div class="tab-pane fade show active" id="bebidasSalcool" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+            <ul class="nav text-center ig ">
+                <li class="nav-item ">
+                    <img src="./img/sucodelaranja.jpg" alt="" >
+                    <h4 class="btn btn-success d-block p-1 m-1">Suco de laranja +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/cocacola.jpg" alt="">
+                    <h4 class="btn btn-success d-block p-1 m-1">coca-cola +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/sucodelaranja.jpg" alt="" >
+                    <h4 class="btn btn-success d-block p-1 m-1">Suco de laranja +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/sucodelaranja.jpg" alt="" >
+                    <h4 class="btn btn-success d-block p-1 m-1">Suco de laranja +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/cocacola.jpg" alt="">
+                    <h4 class="btn btn-success d-block p-1 m-1">coca-cola +</h4>
+                </li>
+                <ul class="nav text-center">
+                <li class="nav-item">
+                    <img src="./img/sucodelaranja.jpg" alt="" >
+                    <h4 class="btn btn-success d-block p-1 m-1">Suco de laranja +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/cocacola.jpg" alt="">
+                    <h4 class="btn btn-success d-block p-1 m-1">coca-cola +</h4>
+                </li>
+                
+                
+                    <li class="nav-item">
+                        <img src="./img/sucodelaranja.jpg" alt="" >
+                        <h4 class="btn btn-success d-block p-1 m-1 ">Suco de laranja +</h4>
+                    </li>
+                    <li class="nav-item">
+                        <img src="./img/cocacola.jpg" alt="">
+                        <h4 class="btn btn-success d-block p-1 m-1">coca-cola +</h4>
+                    </li>
+                    <li class="nav-item">
+                        <img src="./img/sucodelaranja.jpg" alt="" >
+                        <h4 class="btn btn-success d-block p-1 m-1">Suco de laranja +</h4>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="tab-pane fade" id="bebidasCalcool" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <ul class="nav text-center ig ">
+                <li class="nav-item">
+                    <img src="./img/heineken.jpg" alt="cerveja" >
+                    <h4 class="btn btn-success d-block pe-1 me-1">cerveja +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/vinho.jpg" alt="vinho">
+                    <h4 class="btn btn-success d-block pe-1 me-1">vinho +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/heineken.jpg" alt="cerveja" >
+                    <h4 class="btn btn-success d-block pe-1 me-1">cerveja +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/vinho.jpg" alt="vinho">
+                    <h4 class="btn btn-success d-block pe-1 me-1">vinho +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/heineken.jpg" alt="cerveja" >
+                    <h4 class="btn btn-success d-block pe-1 me-1">cerveja +</h4>
+                </li>
+                <ul class="nav text-center" >
+                <li class="nav-item">
+                    <img src="./img/vinho.jpg" alt="vinho">
+                    <h4 class="btn btn-success d-block pe-1 me-1">vinho +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/heineken.jpg" alt="cerveja" >
+                    <h4 class="btn btn-success d-block pe-1 me-1 ">cerveja +</h4>
+                </li>
+                
+                
+                    <li class="nav-item">
+                        <img src="./img/vinho.jpg" alt="vinho">
+                        <h4 class="btn btn-success d-block pe-1 me-1">vinho +</h4>
+                    </li>
+                    <li class="nav-item">
+                        <img src="./img/heineken.jpg" alt="cerveja" >
+                        <h4 class="btn btn-success d-block pe-1 me-1">cerveja +</h4>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="tab-pane fade" id="pratosprincipais" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+            <ul class="nav text-center ig">
+                <li class="nav-item">
+                    <img src="./img/principal.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">prato principal +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/principal2.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">prato principal 2 +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/principal.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">prato principal +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/principal2.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">prato principal 2 +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/principal.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">prato principal +</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="sobremesas" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+            <ul class="nav text-center ig">
+                <li class="nav-item">
+                    <img src="./img/bolo.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">Bolo de chocolate +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/sobremesa.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">sobremesa  +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/bolo.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">Bolo de chocolate +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/sobremesa.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">sobremesa  +</h4>
+                </li>
+                <li class="nav-item">
+                    <img src="./img/bolo.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">Bolo de chocolate +</h4>
+                </li>
+                <ul class="nav text-center"></ul>
+                <li class="nav-item">
+                    <img src="./img/sobremesa.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">sobremesa  +</h4>
+                </li>
+                
+                <li class="nav-item">
+                    <img src="./img/bolo.jpg" alt="">
+                    <h4 class="d-block btn btn-success p-1 m-1">Bolo de chocolate +</h4>
+                </li>
+                
+                    <li class="nav-item">
+                        <img src="./img/sobremesa.jpg" alt="">
+                        <h4 class="d-block btn btn-success p-1 m-1">sobremesa  +</h4>
+                    </li>
+                    <li class="nav-item">
+                        <img src="./img/bolo.jpg" alt="">
+                        <h4 class="d-block btn btn-success p-1 m-1">Bolo de chocolate  +</h4>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        </div>
+    
+</section>
+
+<hr class="w-100">
+
+<section id="faleC" class="form container-fluid mb-5">
+    <div class="row">
+        <h2 class="text-center mt-5 mb-5 fontPer text-info">Fale Conosco</h2>
+    </div>
+    <form class="form row">
+        <div class="col-7">
+        
+        <label  for="nome" class="form-label">digite seu nome:</label>
+        <input type="text" class="form-control" id="nome" required>
+
+        <label for="tel" class="form-label">digite seu telefone:</label>
+        <input id="telefone" type="tel" class="form-control" required>
+
+        <label for="email" class="form-label">digite seu email:</label>
+        <input type="email" class="form-control" required>
+
+        <label for="text" class="form-label">deixe sua mensagem aqui:</label>
+        <textarea name="texto" id="texto" class="form-control"></textarea>
+
+        <button style="background-color: rgb(190, 27, 255);" class="btn fontPer text-white bbb mt-5" type="submit">Enviar</button>
+        </div>
+        <div class="col-5">
+            <h2 class="text-center fontPer text-info">Redes Sociais</h2>
+            <nav>
+            <ul  class="nav mt-5">
+                <li class="nav-item "><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li class="nav-item "><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li class="nav-item "><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+            </nav>
+            <div class="d-flex justify-content-center mt-5">
+            <button style="color: white; background-color: rgb(190, 27, 255);" class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><span>Para Saber Mais</span></button>
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fontPer" id="offcanvasBottomLabel">Entre em contato com a Gente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    
+                    <h4 class="fontPer">Nossos endereços</h4>
+                    <p>Rua exemplo,  Numero 0, Cidade html, estado MG</p>
+                    <p>Rua exemplo,  Numero 0, Cidade html, estado SP</p>
+                    <p>Rua exemplo,  Numero 0, Cidade html, estado SC</p>
+                
+                        <h4 class="fontPer mt-5">Nossos Numeros para contato</h4>
+                        <p>35999999999</p>
+                        <p>11999999999</p>
+                        <p>34999999999</p>
+                    
+                
+                </div>
+            </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+</div>
+
+
+<footer class="pt-3 pb-3" style="background-color: rgb(39, 39, 39);">
+
+    <h5 class="text-center  fontPer">2023 &copy; Todos Os Direitos Reservados </h5>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
