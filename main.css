@@ -3,6 +3,7 @@
 }
 body{
     background-color: rgb(255, 253, 253);
+    overflow-x: hidden;
     
 }
 .cabecalho{
